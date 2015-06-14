@@ -1,7 +1,7 @@
 class CreateGroups < ActiveRecord::Migration
   def change
     create_table :groups do |t|
-      t.reference :user
+      t.references :user
 
       t.timestamps null: false
     end
